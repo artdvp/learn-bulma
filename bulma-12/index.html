@@ -4,11 +4,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Launch:Header!</title>
+	<title>Launch:Main!</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 	<!-- <link rel="stylesheet" href="styles/debug.css"> -->
 	<link rel="stylesheet" href="styles/helpers.css">
+	<link rel="stylesheet" href="styles/grid.css">
 	<style lang="">
 		.hero {
 			background: black url(images/hero-1.jpg) center/ cover;
@@ -16,6 +17,10 @@
 
 		.is-logo-color {
 			fill: white;
+		}
+
+		.text-shadow {
+			text-shadow: 2px 1px black;
 		}
 
 		@media (max-width: 1024px) {
@@ -48,16 +53,16 @@
 						<img class="" src="images/tesla.svg" style="width:6.25rem;height: 1rem;">
 					</figure>
 				</div>
-				<div class="column center desktop">
-					<p class="navbar-item has-text-black">MODEL S</p>
-					<p class="navbar-item has-text-black">MODEL X</p>
-					<p class="navbar-item has-text-black">MODEL 3 </p>
+				<div class="column center desktop text-shadow">
+					<p class="navbar-item has-text-white">MODEL S</p>
+					<p class="navbar-item has-text-white">MODEL X</p>
+					<p class="navbar-item has-text-white">MODEL 3 </p>
 					<p class="navbar-item has-text-white">ROADSTER</p>
-					<p class="navbar-item has-text-black">ENERGY</p>
+					<p class="navbar-item has-text-white">ENERGY</p>
 				</div>
 				<div class="column right">
-					<p class="navbar-item has-text-white desktop">SHOP</p>
-					<p class="navbar-item has-text-white desktop">SIGN IN</p>
+					<p class="navbar-item has-text-white desktop text-shadow">SHOP</p>
+					<p class="navbar-item has-text-white desktop text-shadow">SIGN IN</p>
 					<figure class="navbar-item image has-text-white center">
 						<i class="fa fa-bars" style="width:1rem;height: 1rem;"></i>
 					</figure>
@@ -67,10 +72,48 @@
 
 		<header class="hero-body">
 			<div class="is-overlay has-text-centered single-spaced" style="top: 82px;">
-				<h1 class="subtitle is-4 has-text-weight-light has-text-black">Tesla</h1>
-				<h2 class="title is-1 has-text-black">Roadster</h2>
+				<h1 class="subtitle text-shadow is-4 has-text-weight-light has-text-white">Tesla</h1>
+				<h2 class="title text-shadow is-1 has-text-white">Roadster</h2>
 			</div>
 		</header>
+
+		<main class="hero-foot center" style="padding: 2rem;">
+			<div id="grid" style="width: 768px;">
+				<div id="a">
+					<p class="has-text-centered has-text-white text-shadow">
+						​The quickest car in the world, with record-setting
+						<br> acceleration, range and performance.
+					</p>
+				</div>
+				<div id="b">
+					<p class="title has-text-white">
+						<i class="fas fa-tachometer-alt has-text-grey-light" style="width: 0.75em; height: 0.75em;"></i>
+						1.9
+						<span class="is-size-5">s</span>
+					</p>
+					<p class="subtitle has-text-white is-7">0-60 mph</p>
+				</div>
+				<div id="c">
+					<p class="title has-text-white">
+						<span class="is-size-5">+</span>250
+						<span class="is-size-5">mph</span>
+					</p>
+					<p class="subtitle is-7 has-text-white">Top Speed</p>
+				</div>
+				<div id="d">
+					<p class="title has-text-white">
+						<span>620</span>
+						<span class="is-size-5">mi</span>
+					</p>
+					<p class="subtitle is-7 has-text-white">Mile Range</p>
+				</div>
+				<div id="e">
+					<a class="button is-danger is-inverted is-rounded is-outlined has-text-weight-bold" style="width: 100%; border: 0.15em solid white;">
+						Reserve Now
+					</a>
+				</div>
+			</div>
+		</main>
 	</section>
 </body>
 
